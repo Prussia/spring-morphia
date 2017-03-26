@@ -12,3 +12,8 @@ out/
 
 # Mac
 .DS_Store
+/bin/
+
+.classpath
+.project
+.settings/*
