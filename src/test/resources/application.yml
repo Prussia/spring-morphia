@@ -1,11 +1,11 @@
 mongo:
   database: local
-  username: admin
-  password: P@ssw0rd1!
+  username: playSpring
+  password: playSpring
   servers:
     -
-      name: 54.238.176.106
-      port: 3500
+      name: localhost
+      port: 27017
 
 morphia:
   entityPackage: uk.co.caeldev.spring.morphia
