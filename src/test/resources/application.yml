@@ -1,11 +1,11 @@
 mongo:
-  database: heroku_q5wsv520
-  username: prussia
+  database: local
+  username: admin
   password: P@ssw0rd1!
   servers:
     -
-      name: ds135690.mlab.com
-      port: 35690
+      name: 54.238.176.106
+      port: 3500
 
 morphia:
   entityPackage: uk.co.caeldev.spring.morphia
