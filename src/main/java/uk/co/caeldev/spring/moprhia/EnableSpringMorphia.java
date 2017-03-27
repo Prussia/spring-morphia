@@ -7,7 +7,6 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 import org.springframework.context.annotation.Import;
-import org.springframework.core.annotation.AliasFor;
 
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
@@ -19,7 +18,7 @@ public @interface EnableSpringMorphia {
 	 * Alias for the {@link #basePackages()} attribute. Allows for more concise annotation declarations e.g.:
 	 * {@code @EnableJpaRepositories("org.my.pkg")} instead of {@code EnableSpringMorphia(basePackages="org.my.pkg")}.
 	 */
-	String[] value() default {"org.my.pkg"};
+	String[] value() default {};
 
-	String[] basePackages() default {"org.my.pkg"};
+	String[] basePackages() default {};
 }

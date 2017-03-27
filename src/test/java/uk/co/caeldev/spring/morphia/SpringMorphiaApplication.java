@@ -14,17 +14,7 @@ import uk.co.caeldev.spring.moprhia.EnableSpringMorphia;
 public class SpringMorphiaApplication {
     public static void main(String[] args) {
     	 
-					
-		printBasepackage();
-    	
         SpringApplication.run(SpringMorphiaApplication.class, args);
     }
 
-	private static void printBasepackage() {
-		StandardAnnotationMetadata metadata = new StandardAnnotationMetadata(SpringMorphiaApplication.class, true);
-		AnnotationAttributes attributes = new AnnotationAttributes(metadata.getAnnotationAttributes(EnableSpringMorphia.class.getName()));
-		System.out.println(attributes);
-		String[] values = attributes.getStringArray("value");
-		System.out.println(values[0]);
-	}
 }

@@ -6,6 +6,3 @@ mongo:
     -
       name: ds135690.mlab.com
       port: 35690
-
-morphia:
-  entityPackage: uk.co.caeldev.spring.morphia
